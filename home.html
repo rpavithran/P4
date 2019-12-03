@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- DEVELOPER: Rhea Pavithran, IS117-001, Fall 2019 -->
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+	<link href='https://fonts.googleapis.com/css?family=Fauna One' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    </script>
+</head>
+
+<body>
+	<header>
+		<h1 style="display:inline-block;">Rhea Pavithran   </h5>
+		<h3 style="display:inline-block;">bridging the gap between culture and dance</h6>	
+	</header>
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+		<ul>
+        	<li><a href="home.html" class="current">Home</a></li>
+        	<li><a href="aboutme.html">About Me</a></li>
+        	<li><a href="#">Future Workshops</a>
+				<ul>
+                	<li><a href="workshops/level.html">By Dance Style</a></li>
+                	<li><a href="workshops/location.html">By Location</a></li>
+            	</ul></li>
+        	<li><a href="register.html">Register</a></li>
+        	<li><a href="contact.html"> Contact</a></li>
+    	</ul>
+	</nav>
+	<img src = "images/classicaldancer2.png" alt = "classical dancer" >
+	<main>
+		<section>
+			<p id = "classes">I teach dance workshops in the NJ/NY area, bringing Indian culture to places that have little to no access to dance culture, and want some experience doing different types of Indian dance!</p><br><br>
+			<h2> Dance styles include: </h2><br>
+			<div class = "row">
+				<div class = "column">
+					<div class = "container">
+					<img src = "images/classical.jpg" alt = "classical" id = "classical">
+					<div class = "overlay" id = "classical"> Classical: Bharathanatyam, Kuchipudi, and Mohiniyattam</div>
+					</div>
+				</div>	
+				<div class = "column">
+					<div class = "container">
+					<img src = "images/bhangra.jpg" alt = "bhangra" id = "bhangra">
+					<div class = "overlay" id = "bhangra"> Bhangra </div>
+					</div>
+				</div>
+			</div>
+			<div class = "row">
+				<div class = "column">
+					<div class = "container">
+					<img src = "images/bollywood.jpg" alt = "bollywood" id = "bollywood">
+					<div class = "overlay" id = "bollywood"> Bollywood</div>
+					</div>
+				</div>	
+				<div class = "column">
+					<div class = "container">
+					<img src = "images/dappankuthu.jpg" alt = "dappan" id = "dappan">
+					<div class = "overlay" id = "dappan"> South Indian (Dappan Koothu) </div>
+					</div>
+				</div>
+			</div><br><br>
+		</section>
+	</main>
+	
+	<footer>
+		<p>Copyright &copy; 2019 Rhea Pavithran | Terms of Service | Privacy Policy</p>
+	</footer>
+	
+</body>
+</html>

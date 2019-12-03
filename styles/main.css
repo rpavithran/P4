@@ -1,0 +1,396 @@
+/*DEVELOPER: Rhea Pavithran, IS117-001, Fall 2019 */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-color: #ffd6d6;
+}
+
+body {
+	font-family: 'Fauna One';
+    font-size: 100%;
+    width: 99%;                     
+    margin: 0 auto;
+    border: 3px solid #FEBBBB;
+    background-color: #ffd6d6;
+}
+
+a:focus, a:hover {
+	font-style: bold;
+}
+
+
+/* HEADER */
+header {
+	padding: 0.0005em 2em 0.0005em 2em;
+	border-bottom: 3px solid #FEBBBB;
+	background-color: #FEBBBB;
+}
+header h1 {
+	font-size: 400%;
+	color: #FFFFFF;
+}
+header h3 {
+	font-size: 130%;
+	color: #FFFFFF;
+    font-style: oblique;
+}
+
+
+/* NAVIGATION MENU */
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+    width: 20%;                 
+}
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #FEA0A0;
+    color: white;
+    font-weight: bold;
+}
+
+#nav_menu a.current {
+	background-color: #FF8989;
+}
+#nav_menu ul ul {
+	width: 100%;
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* IMAGE SPECIFICATIONS */
+img[alt="classical dancer"] {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    position: fixed;
+    right: 0px;
+    bottom: 0px:
+    height: 200%;
+    
+}
+
+#classical{
+    width: 320px;
+    height: auto;
+}
+
+#bhangra{
+    width:320px;
+    height: auto;
+}
+
+#bollywood{
+    width: 320px;
+    height: auto;
+}
+
+#dappan{
+    width: 320px;
+    height: auto;
+}
+
+
+.column {
+  float: left;
+  width: 30%;
+  padding: 10px;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#Rhea {
+    height: 400px;
+    width: auto;
+    padding-left: 2em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+    float: left;
+}
+
+
+#instagram{
+    width: 50px;
+    height: auto;
+}
+
+
+/* SECTION */
+section {
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 250px;
+}
+
+#aboutme {
+		width: 5em;
+		border: 5px solid black;
+		padding: 20px;
+    margin-left: 1em;
+}
+
+#contact {
+	width: 6em;
+	border: 5px solid black;
+	padding: 20px;
+}
+
+p{
+    padding-right: 250px;
+}
+
+#bystyle {
+	width: 5em;
+	border: 5px solid black;
+	padding: 20px;
+}
+
+#bylocation {
+	width: 7em;
+	border: 5px solid black;
+	padding: 20px;
+}
+
+#register {
+	width: 7em;
+	border: 5px solid black;
+	padding: 20px;
+}
+
+/* OVERLAY IMAGES */
+* {box-sizing: border-box}
+
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 50px;
+}
+
+.image {
+  display: block;
+  width: 50%;
+  height: auto;
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+
+
+/* FOOTER */
+footer {
+	background-color: #FEA0A0;
+	clear: both;
+
+}
+footer p {
+	text-align: center;
+	color: white;
+	padding: 1em 0;
+}
+ 
+/* CALENDAR */
+.st-bg { background:white; }
+.st-bg-today { background:#FEA0A0; border-left:1px #FEA0A0; border-right:1px #FEA0A0; }
+.st-dtitle { background:white; }
+
+
+#mobile_menu {
+	display: none;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    header { text-align: center; }
+	section h1 { font-size: 135%; }
+	section h3 { font-size: 100%; padding-bottom: 4px;}
+    
+    #classical {
+        max-width: 250px;
+    }
+    
+    #bhangra {
+        max-width: 250px;
+    }
+    
+    #bollywood {
+        max-width: 250px;
+    }
+    
+    #dappan {
+        max-width: 250px;
+    }
+    
+    #Rhea {
+    fixed: center;
+    }
+    
+    #classes {
+        text-align:left;
+        margin-left: 0em;
+        margin-right: 0em;
+    }
+		
+		#thanks {
+        text-align:left;
+        margin-left: 0em;
+        margin-right: 0em;
+    }
+		
+		#schedule {
+			text-align: left;
+			margin-left: 0em;
+			margin-right: 0em;
+		}
+		
+		section {
+			padding-right: 0em;
+		}
+}
+
+
+@media only screen and (max-width: 767px) {
+	header { text-align: center; }
+	section {
+		float: none;
+		padding-right: 0em;
+		text-align: center;
+		}
+	
+    #schedule {
+			text-align: left;
+			margin-left: 0em;
+			margin-right: 0em;
+		}
+		
+    #classes {
+        text-align:left;
+        margin-left: 0em;
+        margin-right: 0em;
+    }
+    
+		#thanks {
+        text-align:left;
+        margin-left: 0em;
+        margin-right: 0em;
+    }
+		
+    #classical {
+        max-width: 200px;
+    }
+    
+    #bhangra {
+        max-width: 200px;
+    }
+    
+    #bollywood {
+        max-width: 200px;
+    }
+    
+    #dappan {
+        max-width: 200px;
+    }
+    
+	#nav_menu {
+		display: none;
+	}
+	#mobile_menu {
+		display: block;
+	}
+	.slicknav_menu {
+		background-color: #FEA0A0 !important;
+	}
+    
+    p {
+        margin-left: 2em;
+    }
+    
+    
+    #Rhea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+    img[alt="classical dancer"] {
+    display: none;
+    }
+		
+		#calendar {
+			display: none;
+		}
+}
+
+
+@media only screen and (max-width: 479px) {
+	body { font-size: 90%; }
+    
+    img[alt="classical dancer"] {
+    display: none;
+    }
+    
+    p { text-align: center; }
+    #Rhea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+      
+    #classes {
+        text-align:left;
+        margin-left: 0em;
+        margin-right: 0em;
+    }
+
+		#thanks {
+        text-align:left;
+        margin-left: 0em;
+        margin-right: 0em;
+    }
+}

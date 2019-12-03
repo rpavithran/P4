@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- DEVELOPER: Rhea Pavithran, IS117-001, Fall 2019 -->
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+	<link href='https://fonts.googleapis.com/css?family=Fauna One' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    </script>
+</head>
+
+<body>
+	<header>
+		<h1 style="display:inline-block;">Rhea Pavithran   </h5>
+		<h3 style="display:inline-block;">bridging the gap between culture and dance</h6>	
+	</header>
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+		<ul>
+        	<li><a href="home.html">Home</a></li>
+        	<li><a href="aboutme.html">About Me</a></li>
+        	<li><a href="#">Future Workshops</a>
+				<ul>
+                	<li><a href="workshops/level.html">By Dance Style</a></li>
+                	<li><a href="workshops/location.html">By Location</a></li>
+            	</ul></li>
+        	<li><a href="register.html">Register</a></li>
+        	<li><a href="contact.html" class = "current"> Contact</a></li>
+    	</ul>
+	</nav>
+	<img src = "images/classicaldancer2.png" alt = "classical dancer" style = "float:right">
+	
+	<main>
+		<section>
+			<h2 id = "contact"> Contact Me! </h2><br>
+			<p id = "thanks"> Thank you for visiting my website! For all collaborations and business inquiries regarding workshops, please fill out the contact form below. </p><br>
+			<div class="container">
+
+			<br><label for="name">Name: </label>
+			<input type="text" id="name" name="name" placeholder="" style = "width: 400px"><br><br>
+
+			<label for="number">Phone Number: </label>
+			<input type="number" id="number" name="number" style = "width: 400px"><br><br>
+			
+			<label for="email">Email: </label>
+			<input type="email" id="email" name="email" style = "width: 400px"><br><br>
+			
+			<p><u>Is this regarding:</u></p>
+			<input type = "radio" name = "regarding" value = "inquiries" > Inquiries about workshops <br><br>
+			<input type = "radio" name = "regarding" value = "collab"> Dance Collaborations <br><br>
+
+			<label for="subject">Subject: </label>
+			<input type="subject" id="subject" name="subject" style = "width: 400px"><br><br>
+
+			<label for="message">Message: </label>
+			<textarea id="message" name="message" placeholder="Write here!" style="height:200px; width: 400px"></textarea><br><br>
+
+    <input type="submit" value="  SEND  "><br><br>
+
+  </form>
+</div>
+		</section>
+	</main>
+	
+	<footer>
+		<p>Copyright &copy; 2019 Rhea Pavithran | Terms of Service | Privacy Policy</p>
+	</footer>
+	
+</body>
+</html>
